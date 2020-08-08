@@ -1,0 +1,93 @@
+
+.postmatic-cleancoded {
+    width: 45%;
+    float: right;
+    border: 1px solid #eee;
+    margin: 0 0 10px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.postmatic-cleancoded-comment {
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+}
+
+.postmatic-cleancoded-comment:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 20px;
+  color: #eee;
+  font-size: 3em;
+}
+.postmatic-cleancoded-comment::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  float:right;
+  position: relative;
+  top: -15px;
+  color: #eee;
+  font-size: 3em;
+}
+
+.postmatic-cleancoded-comment p {
+    display: inline;
+    font-style: italic;
+    font-size: 90%;
+}
+
+.postmatic-cleancoded-comment p:nth-child(2),.postmatic-cleancoded-comment p:nth-child(3),.postmatic-cleancoded-comment p:nth-child(4) {
+    display: block;
+    margin-top: 15px;
+}
+
+.postmatic-cleancoded-author {
+    font-size: 125%;
+}
+
+.postmatic-cleancoded-avatar {
+    margin-left: 25px;
+}
+
+.postmatic-cleancoded-avatar img {
+    float: left;
+     -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;   
+    width: 48px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) { 
+    
+.postmatic-cleancoded {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+    
+}
+}
+/*styles for postmatic*/
+
+.postmatic-content .postmatic-cleancoded {
+    font-size: 13px;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 480px) {
+			.postmatic-content .postmatic-cleancoded {
+			  width: 90% !important;
+			  display: block !important;
+              margin: 25px auto !important;
+              float: none !important;
+			}
+}
